@@ -10,9 +10,7 @@ import { debounceTime, distinctUntilChanged, filter, map, tap, } from 'rxjs';
 export class SearchComponent implements OnInit {
 inputSearch= new FormControl('');
 @Output() submitted=new EventEmitter<string>()// permite comm info de un comp hijo a uno padre
-  constructor() { 
-    
-  }
+  constructor() {}
 
   ngOnInit(): void {
     this.onChange();
